@@ -1,0 +1,321 @@
+2016-01-24 19:56:13.643 IC2016Chat[64294:368628] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/csantana23/Library/Developer/CoreSimulator/Devices/B60907F7-F44C-48B5-8DAD-F6F5D6F49700/data/Containers/Data/Application/44D8FB54-3B16-4742-B85D-38E3B81114EE/Library/Cookies/com.ibm.IC2016Chat.binarycookies
+2016-01-24 19:56:13.895 IC2016Chat[64294:368628] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2016-01-24 19:56:13.906 IC2016Chat[64294:368628] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-667h
+2016-01-24 19:56:13.943 IC2016Chat[64294:368691] [INFO] [WL_INIT] -[WLImpl initWL] in WLImpl.m:120 :: App is using MFP Cordova Plugin
+2016-01-24 19:56:13.949 IC2016Chat[64294:368628] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-667h
+2016-01-24 19:56:13.951 IC2016Chat[64294:368628] Unbalanced calls to begin/end appearance transitions for <UIViewController: 0x7a092c00>.
+2016-01-24 19:56:13.966 IC2016Chat[64294:368691] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = MFPBank;
+    "application version" = "1.0";
+    host = "10.0.1.9";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    wlServerContext = "/BackendRuntime/";
+}
+2016-01-24 19:56:13.978 IC2016Chat[64294:368691] [FATAL] [WL_INIT] -[WLImpl initWL] in WLImpl.m:180 :: Init failure: [WLConfig init] Invalid initialization, Some keys are missing in worklight.plist. Missing keys: (
+    environment
+), (null). Reinstall the application and try again.
+2016-01-24 19:56:13.990 IC2016Chat[64294:368691] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = MFPBank;
+    "application version" = "1.0";
+    host = "10.0.1.9";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    wlServerContext = "/BackendRuntime/";
+}
+2016-01-24 19:56:14.096 IC2016Chat[64294:368691] [FATAL] [WORKLIGHT] Uncaught Exception: Some keys are missing in worklight.plist. Missing keys: (
+    environment
+)
+2016-01-24 19:56:14.113 IC2016Chat[64294:368691] *** Terminating app due to uncaught exception '[WLConfig init] Invalid initialization', reason: 'Some keys are missing in worklight.plist. Missing keys: (
+    environment
+)'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x008dba14 __exceptionPreprocess + 180
+	1   libobjc.A.dylib                     0x03a15e02 objc_exception_throw + 50
+	2   CoreFoundation                      0x008db93d +[NSException raise:format:] + 141
+	3   IC2016Chat                          0x0041bae8 -[WLConfig checkAllMandatoryKeysAreInPlist:] + 888
+	4   IC2016Chat                          0x004199a6 -[WLConfig init] + 1238
+	5   IC2016Chat                          0x00419ad3 +[WLConfig instance] + 131
+	6   IC2016Chat                          0x004318f6 +[WLUtils getLocalizedString:] + 470
+	7   IC2016Chat                          0x0035f3ca -[WLImpl initWL] + 8698
+	8   Foundation                          0x036269ba -[NSThread main] + 76
+	9   Foundation                          0x036db1cc __NSThread__start__ + 1346
+	10  libsystem_pthread.dylib             0x044e3a26 _pthread_body + 138
+	11  libsystem_pthread.dylib             0x044e399c _pthread_body + 0
+	12  libsystem_pthread.dylib             0x044e0f96 thread_start + 34
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2016-01-24 19:57:30.079 IC2016Chat[64984:371289] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/csantana23/Library/Developer/CoreSimulator/Devices/4A6606B6-40C5-4908-83EA-6BB222125AD0/data/Containers/Data/Application/29C83C0E-79E9-4245-9CF6-9DEDC7AAEF7A/Library/Cookies/com.ibm.IC2016Chat.binarycookies
+2016-01-24 19:57:30.116 IC2016Chat[64984:371289] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2016-01-24 19:57:30.260 IC2016Chat[64984:371289] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-667h
+2016-01-24 19:57:30.266 IC2016Chat[64984:371330] [INFO] [WL_INIT] -[WLImpl initWL] in WLImpl.m:120 :: App is using MFP Cordova Plugin
+2016-01-24 19:57:30.290 IC2016Chat[64984:371330] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = MFPBank;
+    "application version" = "1.0";
+    host = "10.0.1.9";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    wlServerContext = "/BackendRuntime/";
+}
+2016-01-24 19:57:30.291 IC2016Chat[64984:371330] [FATAL] [WL_INIT] -[WLImpl initWL] in WLImpl.m:180 :: Init failure: [WLConfig init] Invalid initialization, Some keys are missing in worklight.plist. Missing keys: (
+    environment
+), (null). Reinstall the application and try again.
+2016-01-24 19:57:30.292 IC2016Chat[64984:371330] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = MFPBank;
+    "application version" = "1.0";
+    host = "10.0.1.9";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    wlServerContext = "/BackendRuntime/";
+}
+2016-01-24 19:57:30.296 IC2016Chat[64984:371330] [FATAL] [WORKLIGHT] Uncaught Exception: Some keys are missing in worklight.plist. Missing keys: (
+    environment
+)
+2016-01-24 19:57:30.297 IC2016Chat[64984:371330] *** Terminating app due to uncaught exception '[WLConfig init] Invalid initialization', reason: 'Some keys are missing in worklight.plist. Missing keys: (
+    environment
+)'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x00897a14 __exceptionPreprocess + 180
+	1   libobjc.A.dylib                     0x039d1e02 objc_exception_throw + 50
+	2   CoreFoundation                      0x0089793d +[NSException raise:format:] + 141
+	3   IC2016Chat                          0x003d7ae8 -[WLConfig checkAllMandatoryKeysAreInPlist:] + 888
+	4   IC2016Chat                          0x003d59a6 -[WLConfig init] + 1238
+	5   IC2016Chat                          0x003d5ad3 +[WLConfig instance] + 131
+	6   IC2016Chat                          0x003ed8f6 +[WLUtils getLocalizedString:] + 470
+	7   IC2016Chat                          0x0031b3ca -[WLImpl initWL] + 8698
+	8   Foundation                          0x035e29ba -[NSThread main] + 76
+	9   Foundation                          0x036971cc __NSThread__start__ + 1346
+	10  libsystem_pthread.dylib             0x0449fa26 _pthread_body + 138
+	11  libsystem_pthread.dylib             0x0449f99c _pthread_body + 0
+	12  libsystem_pthread.dylib             0x0449cf96 thread_start + 34
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2016-01-24 23:56:47.351 IC2016Chat[79547:501355] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2016-01-24 23:56:47.357 IC2016Chat[79547:501355] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:56:47.363 IC2016Chat[79547:501401] [INFO] [WL_INIT] -[WLImpl initWL] in WLImpl.m:120 :: App is using MFP Cordova Plugin
+2016-01-24 23:56:47.368 IC2016Chat[79547:501355] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:56:47.370 IC2016Chat[79547:501355] Unbalanced calls to begin/end appearance transitions for <UIViewController: 0x79f697f0>.
+2016-01-24 23:56:47.387 IC2016Chat[79547:501401] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = "com_ibm_IC2016Chat";
+    "application version" = "1.0.0";
+    buildtime = 1453686477641;
+    environment = iphone;
+    host = "10.0.1.9";
+    ignoredFileExtensions = "png, jpg, jpeg, gif, mp4, mp3";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    testWebResourcesChecksum = false;
+    wlAppFamily = "";
+    wlMainFile = "index.html";
+    wlSecureDirectUpdatePublicKey = "";
+    wlServerContext = "/MFPBackend/";
+    wlShareCookies = "";
+    wlShareUserCert = false;
+    wlUid = "PcfKtL3VTqgYLpwQNvoCvg==";
+}
+2016-01-24 23:56:47.761 IC2016Chat[79547:501355] Apache Cordova native platform version 3.7.0 is starting.
+2016-01-24 23:56:47.762 IC2016Chat[79547:501355] Multi-tasking -> Device: YES, App: YES
+2016-01-24 23:56:47.768 IC2016Chat[79547:501355] Unlimited access to network resources
+2016-01-24 23:56:47.772 IC2016Chat[79547:501355] [CDVTimer][keyboard] 0.084996ms
+2016-01-24 23:56:47.773 IC2016Chat[79547:501355] [CDVTimer][wlapp] 0.302017ms
+2016-01-24 23:56:47.773 IC2016Chat[79547:501355] [CDVTimer][push] 0.307024ms
+2016-01-24 23:56:47.773 IC2016Chat[79547:501355] [CDVTimer][TotalPluginStartup] 1.527965ms
+2016-01-24 23:56:47.823 IC2016Chat[79547:501355] Resetting plugins due to page load.
+2016-01-24 23:56:48.026 IC2016Chat[79547:501355] Finished load of: file:///Users/csantana23/Library/Developer/CoreSimulator/Devices/D0392355-1658-44D3-89BC-35B18D2B2734/data/Containers/Bundle/Application/18FE5C84-C321-4A60-B706-559C3D2BAFBF/IC2016Chat.app/www/index.html#/app/chat
+2016-01-24 23:56:49.083 IC2016Chat[79547:501355] Running static_app_props.js
+2016-01-24 23:56:49.126 IC2016Chat[79547:501355] Calling WL.Client.init(wlInitOptions);
+2016-01-24 23:56:50.083 IC2016Chat[79547:501355] log1
+2016-01-24 23:56:50.098 IC2016Chat[79547:501378] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.136 IC2016Chat[79547:501355] MobileFirst Client SDK Initilized
+2016-01-24 23:56:50.136 IC2016Chat[79547:501531] [DEBUG] [NONE] wlclient init started
+2016-01-24 23:56:50.137 IC2016Chat[79547:501530] [DEBUG] [NONE] ondeviceready event dispatched
+2016-01-24 23:56:50.137 IC2016Chat[79547:501377] [DEBUG] [NONE] Read cookies: null
+2016-01-24 23:56:50.137 IC2016Chat[79547:501392] [DEBUG] [NONE] CookieMgr read cookies: {}
+2016-01-24 23:56:50.137 IC2016Chat[79547:501395] [DEBUG] [NONE] before: initOptions.onSuccess
+2016-01-24 23:56:50.138 IC2016Chat[79547:501533] [DEBUG] [NONE] after: initOptions.onSuccess
+2016-01-24 23:56:50.138 IC2016Chat[79547:501534] [DEBUG] [NONE] added onPause and onResume event handlers
+2016-01-24 23:56:50.138 IC2016Chat[79547:501378] [DEBUG] [NONE] wlclient init success
+2016-01-24 23:56:50.138 IC2016Chat[79547:501532] [DEBUG] [NONE] Adapter Carlled
+2016-01-24 23:56:50.138 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.140 IC2016Chat[79547:501532] [DEBUG] [io.ionic] mfp and ionic are ready, safe to use WL.* APIs
+2016-01-24 23:56:50.141 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.146 IC2016Chat[79547:501534] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:56:50.149 IC2016Chat[79547:501534] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:56:50.161 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:352 :: Request Failed
+2016-01-24 23:56:50.162 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:353 :: Response Status Code : 403
+2016-01-24 23:56:50.162 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:354 :: Response Error : Request failed: forbidden (403)
+2016-01-24 23:56:50.168 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.171 IC2016Chat[79547:501533] [DEBUG] [NONE] Request [http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization]
+2016-01-24 23:56:50.177 IC2016Chat[79547:501534] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization?response_type=code&client_id=bc8fe6d1172e02c2e6056a9995c50776e35d4bc9&redirect_uri=http%3A%2F%2Fmfpredirecturi&scope=wl_antiXSRFRealm%20wl_anonymousUserRealm&isAjaxRequest=true&x=0.6825014224741608
+2016-01-24 23:56:50.178 IC2016Chat[79547:501534] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization?response_type=code&client_id=bc8fe6d1172e02c2e6056a9995c50776e35d4bc9&redirect_uri=http%3A%2F%2Fmfpredirecturi&scope=wl_antiXSRFRealm%20wl_anonymousUserRealm&isAjaxRequest=true&x=0.6825014224741608
+2016-01-24 23:56:50.202 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:352 :: Request Failed
+2016-01-24 23:56:50.202 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:353 :: Response Status Code : 401
+2016-01-24 23:56:50.202 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:354 :: Response Error : Request failed: unauthorized (401)
+2016-01-24 23:56:50.208 IC2016Chat[79547:501531] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.208 IC2016Chat[79547:501530] [DEBUG] [NONE] Request [http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization]
+2016-01-24 23:56:50.213 IC2016Chat[79547:501378] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization?response_type=code&client_id=bc8fe6d1172e02c2e6056a9995c50776e35d4bc9&redirect_uri=http%3A%2F%2Fmfpredirecturi&scope=wl_antiXSRFRealm%20wl_anonymousUserRealm&isAjaxRequest=true&x=0.29233658290468156
+2016-01-24 23:56:50.214 IC2016Chat[79547:501378] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization?response_type=code&client_id=bc8fe6d1172e02c2e6056a9995c50776e35d4bc9&redirect_uri=http%3A%2F%2Fmfpredirecturi&scope=wl_antiXSRFRealm%20wl_anonymousUserRealm&isAjaxRequest=true&x=0.29233658290468156
+2016-01-24 23:56:50.236 IC2016Chat[79547:501535] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestRedirected:response:] in WLAFHTTPRequestOperationManagerWrapper.m:372 :: Request Redirected to URL : http://mfpredirecturi?code=Afen4mZ8veISen8HoUmspTo81GQ2g1RLUU-ZSvo26kqElJ8zqZ0LKuDQBygVQKD1n6vRHCXeKVZd4eFsouRtUwmEeyfASaEPbYMsRJJIo-Wuv4bgttgOYfKuOv24QknayjZ941ppCuVTX4kDBXplyvzc1SrHOCusdsTYnhxNMCs&wl_result=%7B%22WL-Authentication-Success%22%3A%7B%22wl_remoteDisableRealm%22%3A%7B%22userId%22%3A%22null%22%2C%22attributes%22%3A%7B%7D%2C%22isUserAuthenticated%22%3A1%2C%22displayName%22%3A%22null%22%2C%22deviceId%22%3A%22null%22%7D%7D%7D
+2016-01-24 23:56:50.242 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:352 :: Request Failed
+2016-01-24 23:56:50.242 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:353 :: Response Status Code : 0
+2016-01-24 23:56:50.243 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFailed:error:] in WLAFHTTPRequestOperationManagerWrapper.m:354 :: Response Error : wl-oauth-prevent-redirect
+2016-01-24 23:56:50.248 IC2016Chat[79547:501355] [DEBUG] [WL_AUTH] -[WLAuthorizationManager invokeTokenRequestWithGrantCode:] in WLAuthorizationManager.m:682 :: Call token endpoint
+2016-01-24 23:56:50.248 IC2016Chat[79547:501532] [DEBUG] [NONE] response [http://10.0.1.9:10080/MFPBackend/authorization/v1/authorization] success: 
+2016-01-24 23:56:50.251 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.252 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/authorization/v1/token
+2016-01-24 23:56:50.253 IC2016Chat[79547:501355] [DEBUG] [WL_REQUEST] -[WLRequest sendRequest:path:withOptions:] in WLRequest.m:142 :: Request timeout is 10.000000
+2016-01-24 23:56:50.253 IC2016Chat[79547:501355] [DEBUG] [WL_REQUEST] -[WLRequest sendRequest:path:withOptions:] in WLRequest.m:221 :: Sending request (http://10.0.1.9:10080/MFPBackend/authorization/v1/token) with headers: 
+{
+    "Accept-Language" = "en-US";
+    "User-Agent" = "IC2016Chat/1.0.0 (iPhone; iOS 9.2; Scale/3.00)/WLNativeAPI/7.1.0.0";
+    "X-Requested-With" = XMLHttpRequest;
+    "X-WL-Authenticate" = "eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJtb2QiOiJBTGZHVmRSTW9TLUtRU3c0OEVLTUVWLWpTV09XblRWXzd4MUhQZjdvNTlSWVNVenVfR3RIdlFHNzBmZW51TG5jdXgtcnBQaERBZmFFQWVIcWhpd3ZXYk09IiwiZXhwIjoiQVFBQiJ9fQ==.eyJjb2RlIjoiQWZlbjRtWjh2ZUlTZW44SG9VbXNwVG84MUdRMmcxUkxVVS1aU3ZvMjZrcUVsSjh6cVowTEt1RFFCeWdWUUtEMW42dlJIQ1hlS1ZaZDRlRnNvdVJ0VXdtRWV5ZkFTYUVQYllNc1JKSklvLVd1djRiZ3R0Z09ZZkt1T3YyNFFrbmF5alo5NDFwcEN1VlRYNGtEQlhwbHl2emMxU3JIT0N1c2RzVFluaHhOTUNzIn0=.BU4cIw_XFY11oCVnb6Y3giop527KDv-3ur4Y9fZYeN0aBzUPIhdX_jj8FI1rSB13shcUcAVTxD81FRACtwIK8A==";
+    "x-wl-app-version" = "1.0.0";
+    "x-wl-device-id" = "4106F7F7-3078-45B5-885E-E091475471DE";
+    "x-wl-platform-version" = "7.1.0.0";
+}
+You can see the request body in the Analytics platform logs.
+2016-01-24 23:56:50.256 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/authorization/v1/token
+2016-01-24 23:56:50.256 IC2016Chat[79547:501355] [DEBUG] [WL_REQUEST] __42-[WLRequest sendRequest:path:withOptions:]_block_invoke in WLRequest.m:231 :: waiting for response... (Thread=<NSThread: 0x79f3bb30>{number = 1, name = main})
+2016-01-24 23:56:50.291 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:333 :: Request Success
+2016-01-24 23:56:50.291 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:334 :: Response Status Code : 200
+2016-01-24 23:56:50.291 IC2016Chat[79547:501355] Response Content : {"scope":"wl_directUpdateRealm wl_remoteDisableRealm wl_antiXSRFRealm wl_deviceNoProvisioningRealm wl_anonymousUserRealm","token_type":"bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQU9iX1ZqRW5UeHRvNXZuSzVkd2JXNWZlazlRems3LVAzMEdNM0dlbklJR3k2RGMzc1ZrbDBKZmV1UmdXeGZqLTMtcGI5SExYdE9GT0hQOGgwc19KbncxMlo0bF9FeHNiWElwdnpGeDJhRFhKOTlxWWhyWXFWYTZvbGc5QzhvN0ZmNVZKRGJaZFBST1RreXJKbE1RTURLXzVCY3JKY09idWx3MU5XWnZYLW5BQ2hkR3NHcHlRZlRHbC1zZmZDY09mT2lSRllTVUxUel9GX2c4b0UxVnRXM3lrQzVqUnFFVWhHblQxc3lmUS1qU1B4bVZUSnBlT2J6TEFKR0ZqdVBSY3l0UkpfSnR1YnhvZHFIZTQ4TzZvZ2dxUG9wQXhubXhuZ25fZG95emhGelYtWnZiNkRNSVlmS0ZWT0NLaTJET24tN3FXWk0wdGdJdVVleGJQbmhwemJQTSJ9fQ.eyJleHAiOjE0NTM3MDE0MTAsInN1YiI6Ijo6YmM4ZmU2ZDExNzJlMDJjMmU2MDU2YTk5OTVjNTA3NzZlMzVkNGJjOSIsImltZi5hbmFseXRpY3MiOnsiaWQiOiJjb21faWJtX0lDMjAxNkNoYXQiLCJlbnZpcm9ubWVudCI6ImlwaG9uZSIsInZlcnNpb24iOiIxLjAuMCJ9LCJpbWYuYXBwbGljYXRpb24iOnsiaWQiOiJjb21faWJtX0lDMjAxNkNoYXQiLCJlbnZpcm9ubWVudCI6ImlwaG9uZSIsInZlcnNpb24iOiIxLjAuMCJ9LCJpc3MiOiJodHRwOlwvXC8xMC4wLjEuOToxMDA4MFwvTUZQQmFja2VuZFwvYXV0aG9yaXphdGlvblwvIiwiaWF0IjoxNDUzNjk3ODEwLCJpbWYuZGV2aWNlIjp7ImlkIjoiNDEwNkY3RjctMzA3OC00NUI1LTg4NUUtRTA5MTQ3NTQ3MURFIiwicGxhdGZvcm0iOiJpT1MiLCJtb2RlbCI6ImlQaG9uZSIsIm9zVmVyc2lvbiI6IjkuMiJ9fQ.BVqSqXHj-iAnq5Xr6_EU_bbSLEArwtwcgAOgsfONVJTRBz8I2JYKV2tsLz73aFQ7Oce7fIIEZxBZJrN1tFlBCh-W1hT2_YNMCe-YoFQ-EQNtgwJBbYfOsqQapqxyUuAr7A-Yxh42YbZYy9ik294ZcdYe8leaAOkvR6duYaMFzZUsWmRB7qLcd0Mh6Y6BURm48uxPOFpLbZtrdTGdagb9uWEZKA_jL6R9_Bp13HgDMdg9QQ5My3IS8oQxp1vHkW_r5IB0VRgzK6-akOkXqFyRxgNCaMQtDUBkvrtIXIieOHCOdzrV7wStVPd-r9IJlgD2FYlJ7p-MUcN9U9WOvXmNyw","access_token":"eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQU9iX1ZqRW5UeHRvNXZuSzVkd2JXNWZlazlRems3LVAzMEdNM0dlbklJR3k2RGMzc1ZrbDBKZmV1UmdXeGZqLTMtcGI5SExYdE9GT0hQOGgwc19KbncxMlo0bF9FeHNiWElwdnpGeDJhRFhKOTlxWWhyWXFWYTZvbGc5QzhvN0ZmNVZKRGJaZFBST1RreXJKbE1RTURLXzVCY3JKY09idWx3MU5XWnZYLW5BQ2hkR3NHcHlRZlRHbC1zZmZDY09mT2lSRllTVUxUel9GX2c4b0UxVnRXM3lrQzVqUnFFVWhHblQxc3lmUS1qU1B4bVZUSnBlT2J6TEFKR0ZqdVBSY3l0UkpfSnR1YnhvZHFIZTQ4TzZvZ2dxUG9wQXhubXhuZ25fZG95emhGelYtWnZiNkRNSVlmS0ZWT0NLaTJET24tN3FXWk0wdGdJdVVleGJQbmhwemJQTSJ9fQ.eyJleHAiOjE0NTM3MDE0MTAsImltZi5zY29wZSI6eyJ3bF9kaXJlY3RVcGRhdGVSZWFsbSI6eyJleHAiOjE0NTM2OTg5NTYsIm1hbmRhdG9yeSI6dHJ1ZX0sIndsX3JlbW90ZURpc2FibGVSZWFsbSI6eyJleHAiOjE0NTM2OTgxMTAsIm1hbmRhdG9yeSI6dHJ1ZX0sIndsX2FudGlYU1JGUmVhbG0iOnsiZXhwIjoxNDUzNzAxNDEwLCJtYW5kYXRvcnkiOnRydWV9LCJ3bF9kZXZpY2VOb1Byb3Zpc2lvbmluZ1JlYWxtIjp7ImV4cCI6MTQ1MzY5ODk1NiwibWFuZGF0b3J5Ijp0cnVlfSwid2xfYW5vbnltb3VzVXNlclJlYWxtIjp7ImV4cCI6MTQ1MzY5ODk1NiwibWFuZGF0b3J5Ijp0cnVlfX0sImlzcyI6Imh0dHA6XC9cLzEwLjAuMS45OjEwMDgwXC9NRlBCYWNrZW5kXC9hdXRob3JpemF0aW9uXC8iLCJwcm4iOiJiYzhmZTZkMTE3MmUwMmMyZTYwNTZhOTk5NWM1MDc3NmUzNWQ0YmM5In0.GbVISyPWlqW8DnY3odzTkr_q5K7ssjL2m4qxcfB0KC8sOD__2BeD45B5D2K8AR3B16bIkQtOjBQIWZpcu1WYkRpQG2aZw3ocy-IGuZDTMDXF0tZVsobwHi1mzuJE5Flm8apypqoaZ5-p6sq9eTdLgUM7ZUteBWJ4bqUSJMfMe5M5rpFocpHGp4IogO8Cjtxp6U_giWDc-rUTnk_Vy8EXHGrfcI9y_e0KB_uDZzBPGbAkqCmOdLgVasmCxXpSCd_ucsPY9U2uQxHnkXSKLIxlK8c_6Ka3CGHCJTfX5nR61tzbMlhtYaORaLVki3Jel5f1krxZL2qvtTglIqUER2NpaQ"}
+2016-01-24 23:56:50.292 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.292 IC2016Chat[79547:501355] [DEBUG] [WL_REQUEST] -[WLRequest requestFinished:] in WLRequest.m:365 :: Response Header: {
+    "Content-Length" = 3115;
+    "Content-Type" = "application/json;charset=UTF-8";
+    Date = "Mon, 25 Jan 2016 04:56:49 GMT";
+    "X-Powered-By" = "Servlet/3.0";
+}
+Response Data: {"scope":"wl_directUpdateRealm wl_remoteDisableRealm wl_antiXSRFRealm wl_deviceNoProvisioningRealm wl_anonymousUserRealm","token_type":"bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQU9iX1ZqRW5UeHRvNXZuSzVkd2JXNWZlazlRems3LVAzMEdNM0dlbklJR3k2RGMzc1ZrbDBKZmV1UmdXeGZqLTMtcGI5SExYdE9GT0hQOGgwc19KbncxMlo0bF9FeHNiWElwdnpGeDJhRFhKOTlxWWhyWXFWYTZvbGc5QzhvN0ZmNVZKRGJaZFBST1RreXJKbE1RTURLXzVCY3JKY09idWx3MU5XWnZYLW5BQ2hkR3NHcHlRZlRHbC1zZmZDY09mT2lSRllTVUxUel9GX2c4b0UxVnRXM3lrQzVqUnFFVWhHblQxc3lmUS1qU1B4bVZUSnBlT2J6TEFKR0ZqdVBSY3l0UkpfSnR1YnhvZHFIZTQ4TzZvZ2dxUG9wQXhubXhuZ25fZG95emhGelYtWnZiNkRNSVlmS0ZWT0NLaTJET24tN3FXWk0wdGdJdVVleGJQbmhwemJQTSJ9fQ.eyJleHAiOjE0NTM3MDE0MTAsInN1YiI6Ijo6YmM4ZmU2ZDExNzJlMDJjMmU2MDU2YTk5OTVjNTA3NzZlMzVkNGJjOSIsImltZi5hbmFseXRpY3MiOnsiaWQiOiJjb21faWJtX0lDMjAxNkNoYXQiLCJlbnZpcm9ubWVudCI6ImlwaG9uZSIsInZlcnNpb24iOiIxLjAuMCJ9LCJpbWYuYXBwbGljYXRpb24iOnsiaWQiOiJjb21faWJtX0lDMjAxNkNoYXQiLCJlbnZpcm9ubWVudCI6ImlwaG9uZSIsInZlcnNpb24iOiIxLjAuMCJ9LCJpc3MiOiJodHRwOlwvXC8xMC4wLjEuOToxMDA4MFwvTUZQQmFja2VuZFwvYXV0aG9yaXphdGlvblwvIiwiaWF0IjoxNDUzNjk3ODEwLCJpbWYuZGV2aWNlIjp7ImlkIjoiNDEwNkY3RjctMzA3OC00NUI1LTg4NUUtRTA5MTQ3NTQ3MURFIiwicGxhdGZvcm0iOiJpT1MiLCJtb2RlbCI6ImlQaG9uZSIsIm9zVmVyc2lvbiI6IjkuMiJ9fQ.BVqSqXHj-iAnq5Xr6_EU_bbSLEArwtwcgAOgsfONVJTRBz8I2JYKV2tsLz73aFQ7Oce7fIIEZxBZJrN1tFlBCh-W1hT2_YNMCe-YoFQ-EQNtgwJBbYfOsqQapqxyUuAr7A-Yxh42YbZYy9ik294ZcdYe8leaAOkvR6duYaMFzZUsWmRB7qLcd0Mh6Y6BURm48uxPOFpLbZtrdTGdagb9uWEZKA_jL6R9_Bp13HgDMdg9QQ5My3IS8oQxp1vHkW_r5IB0VRgzK6-akOkXqFyRxgNCaMQtDUBkvrtIXIieOHCOdzrV7wStVPd-r9IJlgD2FYlJ7p-MUcN9U9WOvXmNyw","access_token":"eyJhbGciOiJSUzI1NiIsImpwayI6eyJhbGciOiJSU0EiLCJleHAiOiJBUUFCIiwibW9kIjoiQU9iX1ZqRW5UeHRvNXZuSzVkd2JXNWZlazlRems3LVAzMEdNM0dlbklJR3k2RGMzc1ZrbDBKZmV1UmdXeGZqLTMtcGI5SExYdE9GT0hQOGgwc19KbncxMlo0bF9FeHNiWElwdnpGeDJhRFhKOTlxWWhyWXFWYTZvbGc5QzhvN0ZmNVZKRGJaZFBST1RreXJKbE1RTURLXzVCY3JKY09idWx3MU5XWnZYLW5BQ2hkR3NHcHlRZlRHbC1zZmZDY09mT2lSRllTVUxUel9GX2c4b0UxVnRXM3lrQzVqUnFFVWhHblQxc3lmUS1qU1B4bVZUSnBlT2J6TEFKR0ZqdVBSY3l0UkpfSnR1YnhvZHFIZTQ4TzZvZ2dxUG9wQXhubXhuZ25fZG95emhGelYtWnZiNkRNSVlmS0ZWT0NLaTJET24tN3FXWk0wdGdJdVVleGJQbmhwemJQTSJ9fQ.eyJleHAiOjE0NTM3MDE0MTAsImltZi5zY29wZSI6eyJ3bF9kaXJlY3RVcGRhdGVSZWFsbSI6eyJleHAiOjE0NTM2OTg5NTYsIm1hbmRhdG9yeSI6dHJ1ZX0sIndsX3JlbW90ZURpc2FibGVSZWFsbSI6eyJleHAiOjE0NTM2OTgxMTAsIm1hbmRhdG9yeSI6dHJ1ZX0sIndsX2FudGlYU1JGUmVhbG0iOnsiZXhwIjoxNDUzNzAxNDEwLCJtYW5kYXRvcnkiOnRydWV9LCJ3bF9kZXZpY2VOb1Byb3Zpc2lvbmluZ1JlYWxtIjp7ImV4cCI6MTQ1MzY5ODk1NiwibWFuZGF0b3J5Ijp0cnVlfSwid2xfYW5vbnltb3VzVXNlclJlYWxtIjp7ImV4cCI6MTQ1MzY5ODk1NiwibWFuZGF0b3J5Ijp0cnVlfX0sImlzcyI6Imh0dHA6XC9cLzEwLjAuMS45OjEwMDgwXC9NRlBCYWNrZW5kXC9hdXRob3JpemF0aW9uXC8iLCJwcm4iOiJiYzhmZTZkMTE3MmUwMmMyZTYwNTZhOTk5NWM1MDc3NmUzNWQ0YmM5In0.GbVISyPWlqW8DnY3odzTkr_q5K7ssjL2m4qxcfB0KC8sOD__2BeD45B5D2K8AR3B16bIkQtOjBQIWZpcu1WYkRpQG2aZw3ocy-IGuZDTMDXF0tZVsobwHi1mzuJE5Flm8apypqoaZ5-p6sq9eTdLgUM7ZUteBWJ4bqUSJMfMe5M5rpFocpHGp4IogO8Cjtxp6U_giWDc-rUTnk_Vy8EXHGrfcI9y_e0KB_uDZzBPGbAkqCmOdLgVasmCxXpSCd_ucsPY9U2uQxHnkXSKLIxlK8c_6Ka3CGHCJTfX5nR61tzbMlhtYaORaLVki3Jel5f1krxZL2qvtTglIqUER2NpaQ"}
+Status code=200
+2016-01-24 23:56:50.292 IC2016Chat[79547:501355] [DEBUG] [WL_REQUEST] -[WLRequest requestFinished:] in WLRequest.m:424 :: NSS object is null
+2016-01-24 23:56:50.306 IC2016Chat[79547:501355] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:56:50.308 IC2016Chat[79547:501377] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:56:50.309 IC2016Chat[79547:501377] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:56:50.329 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:333 :: Request Success
+2016-01-24 23:56:50.330 IC2016Chat[79547:501355] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:334 :: Response Status Code : 200
+2016-01-24 23:56:50.330 IC2016Chat[79547:501355] Response Content : {"isSuccessful":true,"chatUrl":"https://ionic.mybluemix.net"}
+2016-01-24 23:56:50.708 IC2016Chat[79547:501355] connected
+2016-01-24 23:56:52.251 IC2016Chat[79547:501533] [DEBUG] [NONE] Piggybacking event transmission
+2016-01-24 23:56:52.251 IC2016Chat[79547:501377] [DEBUG] [NONE] Flush called
+2016-01-24 23:58:28.388 IC2016Chat[80422:504571] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2016-01-24 23:58:28.393 IC2016Chat[80422:504571] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:58:28.398 IC2016Chat[80422:504593] [INFO] [WL_INIT] -[WLImpl initWL] in WLImpl.m:120 :: App is using MFP Cordova Plugin
+2016-01-24 23:58:28.409 IC2016Chat[80422:504571] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:58:28.411 IC2016Chat[80422:504571] Unbalanced calls to begin/end appearance transitions for <UIViewController: 0x78b7ac40>.
+2016-01-24 23:58:28.421 IC2016Chat[80422:504593] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = "com_ibm_IC2016Chat";
+    "application version" = "1.0.0";
+    buildtime = 1453686477641;
+    environment = iphone;
+    host = "10.0.1.9";
+    ignoredFileExtensions = "png, jpg, jpeg, gif, mp4, mp3";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    testWebResourcesChecksum = false;
+    wlAppFamily = "";
+    wlMainFile = "index.html";
+    wlSecureDirectUpdatePublicKey = "";
+    wlServerContext = "/MFPBackend/";
+    wlShareCookies = "";
+    wlShareUserCert = false;
+    wlUid = "PcfKtL3VTqgYLpwQNvoCvg==";
+}
+2016-01-24 23:58:28.528 IC2016Chat[80422:504571] Apache Cordova native platform version 3.7.0 is starting.
+2016-01-24 23:58:28.528 IC2016Chat[80422:504571] Multi-tasking -> Device: YES, App: YES
+2016-01-24 23:58:28.530 IC2016Chat[80422:504571] Unlimited access to network resources
+2016-01-24 23:58:28.534 IC2016Chat[80422:504571] [CDVTimer][keyboard] 0.074029ms
+2016-01-24 23:58:28.535 IC2016Chat[80422:504571] [CDVTimer][wlapp] 0.461042ms
+2016-01-24 23:58:28.536 IC2016Chat[80422:504571] [CDVTimer][push] 0.280976ms
+2016-01-24 23:58:28.536 IC2016Chat[80422:504571] [CDVTimer][TotalPluginStartup] 1.938999ms
+2016-01-24 23:58:28.579 IC2016Chat[80422:504571] Resetting plugins due to page load.
+2016-01-24 23:58:28.715 IC2016Chat[80422:504571] Finished load of: file:///Users/csantana23/Library/Developer/CoreSimulator/Devices/D0392355-1658-44D3-89BC-35B18D2B2734/data/Containers/Bundle/Application/3943E9C8-A522-447A-B366-0B8BA04CB927/IC2016Chat.app/www/index.html#/app/chat
+2016-01-24 23:58:30.080 IC2016Chat[80422:504571] Running static_app_props.js
+2016-01-24 23:58:30.131 IC2016Chat[80422:504571] Calling WL.Client.init(wlInitOptions);
+2016-01-24 23:58:31.082 IC2016Chat[80422:504571] log1
+2016-01-24 23:58:31.094 IC2016Chat[80422:504583] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:58:31.129 IC2016Chat[80422:504583] [DEBUG] [NONE] wlclient init started
+2016-01-24 23:58:31.129 IC2016Chat[80422:504571] MobileFirst Client SDK Initilized
+2016-01-24 23:58:31.130 IC2016Chat[80422:504586] [DEBUG] [NONE] ondeviceready event dispatched
+2016-01-24 23:58:31.130 IC2016Chat[80422:504740] [DEBUG] [NONE] Read cookies: null
+2016-01-24 23:58:31.130 IC2016Chat[80422:504739] [DEBUG] [NONE] CookieMgr read cookies: {}
+2016-01-24 23:58:31.130 IC2016Chat[80422:504741] [DEBUG] [NONE] before: initOptions.onSuccess
+2016-01-24 23:58:31.131 IC2016Chat[80422:504744] [DEBUG] [NONE] after: initOptions.onSuccess
+2016-01-24 23:58:31.131 IC2016Chat[80422:504745] [DEBUG] [NONE] added onPause and onResume event handlers
+2016-01-24 23:58:31.131 IC2016Chat[80422:504584] [DEBUG] [NONE] wlclient init success
+2016-01-24 23:58:31.131 IC2016Chat[80422:504587] [DEBUG] [NONE] Adapter Carlled
+2016-01-24 23:58:31.132 IC2016Chat[80422:504571] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:58:31.134 IC2016Chat[80422:504587] [DEBUG] [io.ionic] mfp and ionic are ready, safe to use WL.* APIs
+2016-01-24 23:58:31.134 IC2016Chat[80422:504571] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:58:31.138 IC2016Chat[80422:504584] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:58:31.140 IC2016Chat[80422:504584] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:58:31.154 IC2016Chat[80422:504571] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:333 :: Request Success
+2016-01-24 23:58:31.155 IC2016Chat[80422:504571] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:334 :: Response Status Code : 200
+2016-01-24 23:58:31.155 IC2016Chat[80422:504571] Response Content : {"isSuccessful":true,"chatUrl":"https://ionic.mybluemix.net"}
+2016-01-24 23:58:31.524 IC2016Chat[80422:504571] connected
+2016-01-24 23:59:18.730 IC2016Chat[81103:506491] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+2016-01-24 23:59:18.899 IC2016Chat[81103:506491] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:59:18.906 IC2016Chat[81103:506519] [INFO] [WL_INIT] -[WLImpl initWL] in WLImpl.m:120 :: App is using MFP Cordova Plugin
+2016-01-24 23:59:18.923 IC2016Chat[81103:506519] [DEBUG] [WL_CONFIG] -[WLConfig init] in WLConfig.m:71 :: {
+    "application id" = "com_ibm_IC2016Chat";
+    "application version" = "1.0.0";
+    buildtime = 1453686477641;
+    environment = iphone;
+    host = "10.0.1.9";
+    ignoredFileExtensions = "png, jpg, jpeg, gif, mp4, mp3";
+    platformVersion = "7.1.0.0";
+    port = 10080;
+    protocol = http;
+    testWebResourcesChecksum = false;
+    wlAppFamily = "";
+    wlMainFile = "index.html";
+    wlSecureDirectUpdatePublicKey = "";
+    wlServerContext = "/MFPBackend/";
+    wlShareCookies = "";
+    wlShareUserCert = false;
+    wlUid = "PcfKtL3VTqgYLpwQNvoCvg==";
+}
+2016-01-24 23:59:18.991 IC2016Chat[81103:506491] [DEBUG] [WL_SPLASH] -[WLSplashView updateImage] in WLSplashView.m:189 :: Splash screen image is taken from UILaunchImages: Default-736h
+2016-01-24 23:59:19.059 IC2016Chat[81103:506491] Apache Cordova native platform version 3.7.0 is starting.
+2016-01-24 23:59:19.060 IC2016Chat[81103:506491] Multi-tasking -> Device: YES, App: YES
+2016-01-24 23:59:19.063 IC2016Chat[81103:506491] Unlimited access to network resources
+2016-01-24 23:59:19.067 IC2016Chat[81103:506491] [CDVTimer][keyboard] 0.106037ms
+2016-01-24 23:59:19.068 IC2016Chat[81103:506491] [CDVTimer][wlapp] 0.092030ms
+2016-01-24 23:59:19.068 IC2016Chat[81103:506491] [CDVTimer][push] 0.070989ms
+2016-01-24 23:59:19.068 IC2016Chat[81103:506491] [CDVTimer][TotalPluginStartup] 0.730991ms
+2016-01-24 23:59:19.079 IC2016Chat[81103:506491] Unbalanced calls to begin/end appearance transitions for <UIViewController: 0x78e46460>.
+2016-01-24 23:59:19.163 IC2016Chat[81103:506491] Resetting plugins due to page load.
+2016-01-24 23:59:19.297 IC2016Chat[81103:506491] Finished load of: file:///Users/csantana23/Library/Developer/CoreSimulator/Devices/D0392355-1658-44D3-89BC-35B18D2B2734/data/Containers/Bundle/Application/485F61DB-398A-4DC9-8E3A-3CCC849357BE/IC2016Chat.app/www/index.html#/app/chat
+2016-01-24 23:59:21.073 IC2016Chat[81103:506491] Running static_app_props.js
+2016-01-24 23:59:21.116 IC2016Chat[81103:506491] Calling WL.Client.init(wlInitOptions);
+2016-01-24 23:59:22.080 IC2016Chat[81103:506491] log1
+2016-01-24 23:59:22.089 IC2016Chat[81103:506503] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:59:22.114 IC2016Chat[81103:506548] [DEBUG] [NONE] wlclient init started
+2016-01-24 23:59:22.114 IC2016Chat[81103:506491] MobileFirst Client SDK Initilized
+2016-01-24 23:59:22.114 IC2016Chat[81103:506547] [DEBUG] [NONE] ondeviceready event dispatched
+2016-01-24 23:59:22.114 IC2016Chat[81103:506509] [DEBUG] [NONE] Read cookies: null
+2016-01-24 23:59:22.114 IC2016Chat[81103:506508] [DEBUG] [NONE] CookieMgr read cookies: {}
+2016-01-24 23:59:22.115 IC2016Chat[81103:506503] [DEBUG] [NONE] before: initOptions.onSuccess
+2016-01-24 23:59:22.115 IC2016Chat[81103:506576] [DEBUG] [NONE] after: initOptions.onSuccess
+2016-01-24 23:59:22.115 IC2016Chat[81103:506577] [DEBUG] [NONE] added onPause and onResume event handlers
+2016-01-24 23:59:22.115 IC2016Chat[81103:506546] [DEBUG] [NONE] wlclient init success
+2016-01-24 23:59:22.116 IC2016Chat[81103:506502] [DEBUG] [NONE] Adapter Carlled
+2016-01-24 23:59:22.116 IC2016Chat[81103:506491] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:59:22.118 IC2016Chat[81103:506502] [DEBUG] [io.ionic] mfp and ionic are ready, safe to use WL.* APIs
+2016-01-24 23:59:22.118 IC2016Chat[81103:506491] [DEBUG] [WORKLIGHT] +[WLClient sharedInstance] in WLClient.m:165 :: IBMMobilieFirstFoundation.framework version = 7.1-2015/12/27 17:46:32
+2016-01-24 23:59:22.122 IC2016Chat[81103:506546] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] +[WLAFHTTPRequestOperationManagerWrapper requestWithURL:] in WLAFHTTPRequestOperationManagerWrapper.m:52 :: Request url is http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:59:22.123 IC2016Chat[81103:506546] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper start] in WLAFHTTPRequestOperationManagerWrapper.m:320 :: Starting the request with URL http://10.0.1.9:10080/MFPBackend/adapters/ChatService/getChatServiceInfo
+2016-01-24 23:59:22.138 IC2016Chat[81103:506491] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:333 :: Request Success
+2016-01-24 23:59:22.138 IC2016Chat[81103:506491] [DEBUG] [WL_AFHTTPRequestOperationManagerWrapper_PACKAGE] -[WLAFHTTPRequestOperationManagerWrapper requestFinished:] in WLAFHTTPRequestOperationManagerWrapper.m:334 :: Response Status Code : 200
+2016-01-24 23:59:22.138 IC2016Chat[81103:506491] Response Content : {"isSuccessful":true,"chatUrl":"https://ionic.mybluemix.net"}
+2016-01-24 23:59:22.616 IC2016Chat[81103:506491] connected
+2016-01-24 23:59:39.180 IC2016Chat[81103:506491] THREAD WARNING: ['Camera'] took '166.437012' ms. Plugin should use a background thread.
