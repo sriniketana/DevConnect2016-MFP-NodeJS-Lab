@@ -21,7 +21,8 @@
     "org.apache.cordova.console",
     "com.ionic.keyboard",
     "cordova-plugin-mfp",
-    "org.apache.cordova.camera"
+    "org.apache.cordova.camera",
+    "cordova-plugin-transport-security"
   ],
   "cordovaPlatforms": [
     "ios",

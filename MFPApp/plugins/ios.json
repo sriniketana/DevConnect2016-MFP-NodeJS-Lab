@@ -250,6 +250,12 @@
                             "xml": "<string />",
                             "count": 2
                         }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -266,6 +272,9 @@
             "PACKAGE_NAME": "com.ibm.IC2016Chat"
         },
         "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.ibm.IC2016Chat"
+        },
+        "cordova-plugin-transport-security": {
             "PACKAGE_NAME": "com.ibm.IC2016Chat"
         }
     },

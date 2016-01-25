@@ -140,6 +140,7 @@ module.exports.metadata =
     "com.ionic.keyboard": "1.0.4",
     "cordova-plugin-mfp": "7.1.0",
     "org.apache.cordova.camera": "0.3.4",
+    "cordova-plugin-transport-security": "0.1.1",
     "org.apache.cordova.device": "0.2.13",
     "org.apache.cordova.dialogs": "0.2.11",
     "org.apache.cordova.geolocation": "0.3.11",
