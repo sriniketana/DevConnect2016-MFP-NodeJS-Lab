@@ -108,7 +108,7 @@ Use the MFP-CLI to add the camera plugin
 
 Edit `MFPApp/www/templates/chat.html`
 
-Add a camera icon to call Camera Plugin
+Add a camera icon to call Camera Plugin as the first child of the `<form>`
 
     <i class="icon ion-camera" ng-click="takePicture()" ng-show="isWebView"></i>
    
