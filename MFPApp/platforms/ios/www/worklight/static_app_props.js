@@ -10,7 +10,7 @@ WL.StaticAppProps = {
   "WORKLIGHT_PLATFORM_VERSION": "7.1.0.0",
   "ENVIRONMENT": "iphone",
   "LOGIN_DISPLAY_TYPE": "embedded",
-  "WORKLIGHT_NATIVE_VERSION": "2929140589",
+  "WORKLIGHT_NATIVE_VERSION": "1331953294",
   "mfpManualInit": false,
   "WORKLIGHT_ROOT_URL": "/apps/services/api/com_ibm_IC2016Chat/iphone/"
 };

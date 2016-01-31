@@ -9,10 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
                         },
@@ -151,6 +147,10 @@
                         {
                             "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -251,20 +251,12 @@
                             "count": 2
                         }
                     ],
-                    "NSAppTransportSecurity": [
-                        {
-                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
-                            "count": 1
-                        }
-                    ]
+                    "NSAppTransportSecurity": []
                 }
             }
         }
     },
     "installed_plugins": {
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ibm.IC2016Chat"
-        },
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.ibm.IC2016Chat"
         },
@@ -274,7 +266,7 @@
         "org.apache.cordova.camera": {
             "PACKAGE_NAME": "com.ibm.IC2016Chat"
         },
-        "cordova-plugin-transport-security": {
+        "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.ibm.IC2016Chat"
         }
     },

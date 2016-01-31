@@ -18,11 +18,16 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.console",
     "com.ionic.keyboard",
     "cordova-plugin-mfp",
     "org.apache.cordova.camera",
-    "cordova-plugin-transport-security"
+    "org.apache.cordova.console",
+    "org.apache.cordova.device",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.geolocation",
+    "org.apache.cordova.globalization",
+    "org.apache.cordova.inappbrowser",
+    "org.apache.cordova.network-information"
   ],
   "cordovaPlatforms": [
     "ios",

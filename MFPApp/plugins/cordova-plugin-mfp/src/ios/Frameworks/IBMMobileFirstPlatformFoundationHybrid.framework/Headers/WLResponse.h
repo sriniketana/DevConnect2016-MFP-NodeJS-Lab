@@ -21,7 +21,7 @@
  * delegate methods of <code>WLClient</code> <code>invokeProcedure</code> methods.
  */
 @interface WLResponse : NSObject {
-	NSInteger status;
+
 	WLProcedureInvocationResult *invocationResult;
 	NSObject *invocationContext;
 	NSString *responseText;

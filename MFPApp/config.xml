@@ -70,7 +70,7 @@
         <splash height="2208" src="res/screen/ios/Default-736h~iphone.png" width="1242" />
         <splash height="1242" src="res/screen/ios/Default-736h-Landscape~iphone.png" width="2208" />
         <preference name="loginDisplay" value="embedded" />
-        <preference name="wlNativeVersion" value="2929140589" />
+        <preference name="wlNativeVersion" value="1331953294" />
     </platform>
     <preference name="mfpServerUrl" value="http://10.0.1.9:10080" />
     <preference name="mfpServerRuntime" value="MFPBackend" />

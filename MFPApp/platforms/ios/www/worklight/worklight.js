@@ -11866,7 +11866,8 @@ function WLResourceRequest(_url, _method, _timeout) {
         var xhr = window.WLJSX.Ajax.getTransport();
 
         var queryString = buildQueryString();
-        var finalUrl = queryString === null ? serverUrl : serverUrl + '?' + queryString;
+        var querySaparator = serverUrl.indexOf('?') === -1 ? '?' : '&';
+		var finalUrl = queryString === null ? serverUrl : serverUrl + querySaparator + queryString;
 
         xhr.open(method, finalUrl, true);
 

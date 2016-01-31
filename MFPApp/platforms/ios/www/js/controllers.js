@@ -51,10 +51,12 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
       template: 'Loading...'
     });
-  MFPClientPromise.then( function (){
+  /*MFPClientPromise.then( function (){
       MFPServices.getChatServiceInfo().then(getChatUrl);
     }
   );
+  */
+  getChatUrl('https://ionic.mybluemix.net');
   function getChatUrl(chatUrl){
       SocketIO.init(chatUrl);
       $scope.serverHost = chatUrl; 
