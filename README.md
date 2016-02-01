@@ -1,6 +1,10 @@
 # IBM InterConnect 2016 Hello World Labs
 # Mobile App Development Using the IBM MobileFirst Platform Foundation Command Line Interface (MFP-CLI)
 
+This Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
+
+![Alt text](/iphone.png)
+
 ## 1. Bluemix NodeJS Server
 
 Login into https://blueminx.net and verify that you have at least 128MB free for Cloud Foundry Apps
