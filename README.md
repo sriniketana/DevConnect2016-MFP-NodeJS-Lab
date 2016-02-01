@@ -57,6 +57,18 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 2.3.3 Use the MFP-CLI to open the console and verify adapter is deployed
 
     $ mfp console
+    
+2.3.4 Test the adapter and verify that returns the correct chat url
+
+    $ mfp adapter call ChatService/getChatServiceInfo
+
+    Calling GET '/MFPBackend/adapters/ChatService/getChatServiceInfo?params=[]'
+
+    Response:
+    {
+      "isSuccessful": true,
+      "chatUrl": "https://chatservice.mybluemix.net"
+    }
 
 ## 3. MFP App
 
