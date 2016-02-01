@@ -59,7 +59,11 @@ Use the MFP-CLI to open the console and verify adapter is deployed
 Change directory to the app directory
 
     $ cd MFPApp
-    
+
+Use the MFP-CLI to add the Cordova Platform iOS
+
+    $ mfp cordova platform add ios
+
 Use the MFP-CLI to push the app to the running MFP Server
 
     $ mfp push
