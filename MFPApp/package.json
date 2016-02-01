@@ -19,7 +19,6 @@
   },
   "cordovaPlugins": [
     "com.ionic.keyboard",
-    "cordova-plugin-mfp",
     "org.apache.cordova.camera",
     "org.apache.cordova.console",
     "org.apache.cordova.device",
