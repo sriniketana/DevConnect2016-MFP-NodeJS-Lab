@@ -17,6 +17,8 @@ Or Visit [https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC
 
 Select a unique hostname for your new App
 
+![bluexmix app deployed](/bluemix-deploy.png)
+
 ### 1.2 Save the url for your new Chat Service (i.e. https://mychat.bluemix.net)
 
 ## 2. MFP Server
@@ -57,6 +59,8 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 2.3.3 Use the MFP-CLI to open the console and verify adapter is deployed
 
     $ mfp console
+
+![adapter deployed on console](/console-adapter.png)
     
 2.3.4 Test the adapter and verify that returns the correct chat url
 
@@ -85,6 +89,10 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 3.2.1 Use the MFP-CLI to push the app to the running MFP Server
 
     $ mfp push
+
+3.2.2 Open Console and verify that App is registered
+
+![app deployed on console](/console-app.png)
 
 ### 3.3 Running the App
 3.3.1 Preview the App on the Browser
@@ -124,6 +132,8 @@ You can also open from Terminal
     $ open platforms/ios/*.xcodeproj
 
 Click Play Button in XCode to run Simulator
+
+![app open in xcode](/xcode.png)
 
 ### 4.2 Add the Cordova Camera Plugin
 
