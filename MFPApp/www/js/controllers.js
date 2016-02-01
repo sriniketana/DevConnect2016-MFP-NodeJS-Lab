@@ -1,7 +1,6 @@
 angular.module('starter.controllers', [])
 
 .controller('ChatCtrl', function ($scope, $ionicModal, $localStorage, $sessionStorage, Camera, SocketIO) {
-	//var ChatManager = FakeChat;
 	var ChatManager = SocketIO;
 	$scope.isWebView = ionic.Platform.isWebView();
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
@@ -30,15 +29,13 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $localStorage, $sessionStorage, randomAvatar, SocketIO, $ionicLoading, MFPClientPromise, MFPServices) {
+.controller('AppCtrl', function($window, $http, $scope, $ionicModal, $localStorage, $sessionStorage, randomAvatar, SocketIO, $ionicLoading, MFPClientPromise, MFPServices) {
 	var ChatManager = SocketIO;
   
   $scope.isWebView = ionic.Platform.isWebView();
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
 
   $scope.save = function () {
-    $scope.$storage.avatar = randomAvatar.getnewAvatar();
-		//$scope.add("Joined");
     ChatManager.add({
 			message: 'Joined',
 			img: null,
@@ -51,12 +48,25 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
       template: 'Loading...'
     });
-  /*MFPClientPromise.then( function (){
-      MFPServices.getChatServiceInfo().then(getChatUrl);
+  
+  randomAvatar.getRandomUser().then(function(user){
+    var host = $window.location.hostname;
+    var protocol = $window.location.protocol
+    
+    $scope.$storage.avatar = user.avatar;
+    $scope.$storage.handle = user.username;
+    
+    if(host.indexOf('mybluemix.net') > 0){
+      getChatUrl(protocol + '//' + host);
+    } else {
+      MFPClientPromise.then( function (){
+        MFPServices.getChatServiceInfo().then(getChatUrl);
+        }
+      );
     }
-  );
-  */
-  getChatUrl('https://ionic.mybluemix.net');
+
+  });
+
   function getChatUrl(chatUrl){
       SocketIO.init(chatUrl);
       $scope.serverHost = chatUrl; 
@@ -69,6 +79,4 @@ angular.module('starter.controllers', [])
         $scope.modal.show();
       });
   }
-
-
 });

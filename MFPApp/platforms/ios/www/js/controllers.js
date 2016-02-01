@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
 .controller('ChatCtrl', function ($scope, $ionicModal, $localStorage, $sessionStorage, Camera, SocketIO) {
 	//var ChatManager = FakeChat;
 	var ChatManager = SocketIO;
-	$scope.isWebView = ionic.Platform.isWebView();
+	//$scope.isWebView = ionic.Platform.isWebView();
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
   $scope.posts = ChatManager.posts;
   
@@ -30,14 +30,14 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $localStorage, $sessionStorage, randomAvatar, SocketIO, $ionicLoading, MFPClientPromise, MFPServices) {
+.controller('AppCtrl', function($http, $scope, $ionicModal, $localStorage, $sessionStorage, randomAvatar, SocketIO, $ionicLoading, MFPClientPromise, MFPServices) {
 	var ChatManager = SocketIO;
   
-  $scope.isWebView = ionic.Platform.isWebView();
+  //$scope.isWebView = ionic.Platform.isWebView();
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
 
   $scope.save = function () {
-    $scope.$storage.avatar = randomAvatar.getnewAvatar();
+   // $scope.$storage.avatar = randomAvatar.getnewAvatar();
 		//$scope.add("Joined");
     ChatManager.add({
 			message: 'Joined',
@@ -51,12 +51,18 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
       template: 'Loading...'
     });
-  /*MFPClientPromise.then( function (){
+  
+  randomAvatar.getRandomUser().then(function(user){
+    $scope.$storage.avatar = user.avatar;
+    $scope.$storage.handle = user.username;
+    getChatUrl('https://ionic.mybluemix.net');
+    /*MFPClientPromise.then( function (){
       MFPServices.getChatServiceInfo().then(getChatUrl);
     }
   );
   */
-  getChatUrl('https://ionic.mybluemix.net');
+  });
+
   function getChatUrl(chatUrl){
       SocketIO.init(chatUrl);
       $scope.serverHost = chatUrl; 

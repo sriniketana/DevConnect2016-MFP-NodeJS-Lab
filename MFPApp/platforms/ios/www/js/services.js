@@ -121,10 +121,9 @@ angular.module('starter.services').factory('Camera', function ($ionicActionSheet
 });
 
 
-angular.module('starter.services').factory('randomAvatar', function ($window) {
+angular.module('starter.services').factory('randomAvatar', function ($window, $http, $q) {
   var avatars = [
     'img/barrett.jpg',
-    'img/bluemix-logo.png',
     'img/slimer.jpg',
     'img/spengler.jpg',
     'img/stantz.jpg',
@@ -137,13 +136,34 @@ angular.module('starter.services').factory('randomAvatar', function ($window) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  function getnewAvatar() {
+  function getRandomUserLocal() {
+    var defer = $q.defer();
+    var user = {};
     var i = getRandomInt(0, avatars.length - 1);
-    return avatars[i];
+    user.username = avatars[i];
+    user.avatar = 'img/'+user.username+'.jpg';
+    defer.resolve(user);
+    return defer.promise;
+  }
+  
+  function getRandomUser() {
+    var defer = $q.defer();
+    var user = {};
+    $http.get('https://randomuser.me/api/').then(
+      function win(resp){
+        user.avatar = resp.data.results[0].user.picture.thumbnail;
+        user.username = resp.data.results[0].user.name.first;
+        defer.resolve(user);
+      }, 
+      function fail(resp){
+        
+      });
+     return defer.promise; 
   }
 
   return {
-    getnewAvatar: getnewAvatar
+    getRandomUserLocal: getRandomUserLocal,
+    getRandomUser: getRandomUser
   };
 
 });

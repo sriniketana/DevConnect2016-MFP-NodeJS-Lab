@@ -5,8 +5,13 @@
     <ion-content>
         <ion-list>
             <label class="item item-input">
-                <span class="input-label"></span>
-                <input type="text" ng-model="$storage.handle" placeholder="Username">
+              <div class="item item-avatar item-text-wrap">
+                 <img ng-src="{{$storage.avatar}}">
+              </div>
+                <span class="input-label">
+                  <input type="text" ng-model="$storage.handle" placeholder="Username">
+                </span>
+                
             </label>
             <button class="button button-full button-calm" ng-click="save($storage.handle,$storage.avatar)" ng-disabled="!$storage.handle">
                 Save
