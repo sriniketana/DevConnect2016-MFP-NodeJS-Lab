@@ -1,18 +1,39 @@
 angular.module('starter.services', []);
 
-angular.module('starter.services').factory('SocketIO', function ($rootScope, $timeout, $ionicScrollDelegate, serverHost) {
-  var webSocketHost = serverHost;
-  var socket = io(webSocketHost);
-  var cbPostArrived;
+angular.module('starter.services')
+
+.factory('MFPServices', function ($q) {
+
+	return {
+		'getChatServiceInfo': function () {
+			var defer = $q.defer();
+			getChatServiceInfo().then(
+				function (response) {
+					defer.resolve(response.responseJSON.chatUrl);
+				}, function (response) {
+					defer.reject(response);
+				});
+			return defer.promise;
+		}
+	};
+
+	function getChatServiceInfo() {
+		var adapterName = 'ChatService';
+		var adapterProcedure = 'getChatServiceInfo';
+		var adapterPath = '/adapters/' + adapterName + '/' + adapterProcedure;
+		var resourceRequest = new WLResourceRequest(
+			adapterPath,
+			WLResourceRequest.GET);
+
+		WL.Logger.debug("Adapter Carlled");
+		return resourceRequest.send();
+	}
+
+});
+
+angular.module('starter.services').factory('SocketIO', function ($rootScope, $timeout, $ionicScrollDelegate) {
+  var socket;
   var posts = [];
-
-  socket.on('connect', function () {
-    console.log('connected');
-  });
-
-  socket.on('new message', function (data) {
-    addLocalPost(data.message)
-  });
 
   function addLocalPost(post) {
     $rootScope.$apply(function () {
@@ -25,7 +46,19 @@ angular.module('starter.services').factory('SocketIO', function ($rootScope, $ti
 		  $timeout(function () { $ionicScrollDelegate.scrollBottom(true); }, 300);
   }
 
+  function init(webSocketHost){
+    socket = io(webSocketHost);
+    socket.on('connect', function () {
+      console.log('connected');
+    });
+
+    socket.on('new message', function (data) {
+      addLocalPost(data.message)
+    });
+    
+  }
   return {
+    init: init,
     posts: posts,
     add: function (post) {
       posts.push(post);
@@ -87,118 +120,10 @@ angular.module('starter.services').factory('Camera', function ($ionicActionSheet
   }
 });
 
-angular.module('starter.services').factory('PouchSvc', function ($q, $rootScope, AppConfig, $timeout, $ionicScrollDelegate ) {
 
-  var _db;
-  var _photos;
-
-  return {
-    initDB: initDB,
-    getAllPhotos: getAllPhotos,
-  };
-
-  function initDB() {
-    // Creates the database or opens if it already exists
-    //_db = new PouchDB('https://97c9a4fe-847d-4bd4-bcdd-c671a3141882-bluemix.cloudant.com/test_db1', { adapter: 'websql' });
-    _db = new PouchDB('photos', { adapter: 'websql' });
-    
-    PouchDB.replicate(AppConfig.remoteDBUrl, _db, {
-      live: true,
-      retry: true
-    });
-    
-  };
-
-  function getAllPhotos() {
-
-    if (!_photos) {
-      return $q.when(_db.allDocs({ include_docs: true }))
-        .then(function (docs) {
-          _photos = docs.rows.map(function (row) {
-            return row.doc;
-          });
-
-          // Listen for changes on the database.
-          _db.changes({ live: true, since: 'now', include_docs: true })
-            .on('change', onDatabaseChange);
-
-          return _photos;
-        });
-    } else {
-      // Return cached data as a promise
-      return $q.when(_photos);
-    }
-  };
-
-  function onDatabaseChange(change) {
-    var index = findIndex(_photos, change.id);
-    var photo = _photos[index];
-
-    if (change.deleted) {
-      if (photo) {
-        _photos.splice(index, 1); // delete
-      }
-    } else {
-      if (photo && photo._id === change.id) {
-        _photos[index] = change.doc; // update
-      } else {
-        $rootScope.$apply(function () {
-            _photos.push(change.doc) // insert
-            $timeout(function () { $ionicScrollDelegate.scrollBottom(true); }, 300);
-          })
-        
-      }
-    }
-  }
-
-  function findIndex(array, id) {
-    var low = 0, high = array.length, mid;
-    while (low < high) {
-      mid = (low + high) >>> 1;
-      array[mid]._id < id ? low = mid + 1 : high = mid
-    }
-    return low;
-  }
-
-
-});
-
-
-
-angular.module('starter.services').factory('FakeChat', function ($rootScope, $ionicScrollDelegate) {
-  var posts = [];
-  return {
-    posts: posts,
-    add: function (post) {
-      posts.push(post);
-      $timeout(function () { $ionicScrollDelegate.scrollBottom(true); }, 300);
-    }
-  };
-});
-
-angular.module('starter.services').factory('serverHost', function ($window, AppConfig) {
-  var finalHost;
-  var appServer = AppConfig.appServer;
-  var localhostPort = AppConfig.localhostPort;
-  var host = $window.location.hostname;
-  var port = $window.location.port;
-  var protocol = $window.location.protocol
-
-  if (port === localhostPort) {
-    finalHost = protocol + '//' + host + ':' + port;
-  } else if (host.indexOf('mybluemix.net') > 0) {
-    finalHost = protocol + '//' + host;
-  } else {
-    finalHost = appServer;
-  }
-
-  return finalHost;
-
-});
-angular.module('starter.services').factory('randomAvatar', function ($window, AppConfig) {
+angular.module('starter.services').factory('randomAvatar', function ($window, $http, $q) {
   var avatars = [
     'img/barrett.jpg',
-    'img/bluemix-logo.png',
     'img/slimer.jpg',
     'img/spengler.jpg',
     'img/stantz.jpg',
@@ -211,14 +136,37 @@ angular.module('starter.services').factory('randomAvatar', function ($window, Ap
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  function getnewAvatar() {
+  function getRandomUserLocal() {
+    var defer = $q.defer();
+    var user = {};
     var i = getRandomInt(0, avatars.length - 1);
-    return avatars[i];
+    user.username = avatars[i];
+    user.avatar = 'img/'+user.username+'.jpg';
+    defer.resolve(user);
+    return defer.promise;
+  }
+  
+  function getRandomUser() {
+    var defer = $q.defer();
+    var user = {};
+    $http.get('https://randomuser.me/api/').then(
+      function win(resp){
+        user.avatar = resp.data.results[0].user.picture.thumbnail;
+        user.username = resp.data.results[0].user.name.first;
+        defer.resolve(user);
+      }, 
+      function fail(resp){
+        
+      });
+     return defer.promise; 
   }
 
   return {
-    getnewAvatar: getnewAvatar
+    getRandomUserLocal: getRandomUserLocal,
+    getRandomUser: getRandomUser
   };
 
 });
+
+
 
