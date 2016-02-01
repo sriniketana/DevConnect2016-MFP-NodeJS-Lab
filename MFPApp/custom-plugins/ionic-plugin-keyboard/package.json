@@ -1,0 +1,70 @@
+{
+  "name": "ionic-plugin-keyboard",
+  "version": "1.0.8",
+  "cordova": {
+    "id": "ionic-plugin-keyboard",
+    "platforms": [
+      "android",
+      "ios",
+      "blackberry10",
+      "wp8",
+      "windows"
+    ]
+  },
+  "description": "Ionic Keyboard Plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/driftyco/ionic-plugin-keyboard.git"
+  },
+  "issue": "https://github.com/driftyco/ionic-plugin-keyboard/issues",
+  "keywords": [
+    "ionic",
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp8",
+    "cordova-windows"
+  ],
+  "author": {
+    "name": "Ionic"
+  },
+  "license": "Apache 2.0",
+  "gitHead": "329c748d04a09e8fdde14782a07d8794cceb3cbf",
+  "bugs": {
+    "url": "https://github.com/driftyco/ionic-plugin-keyboard/issues"
+  },
+  "homepage": "https://github.com/driftyco/ionic-plugin-keyboard#readme",
+  "_id": "ionic-plugin-keyboard@1.0.8",
+  "scripts": {},
+  "_shasum": "051d742ff0507468efc1b678e56427376b969b23",
+  "_from": "ionic-plugin-keyboard@latest",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "tlancina",
+    "email": "tim@ionic.io"
+  },
+  "dist": {
+    "shasum": "051d742ff0507468efc1b678e56427376b969b23",
+    "tarball": "http://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-1.0.8.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "drifty",
+      "email": "max@drifty.com"
+    },
+    {
+      "name": "ionic",
+      "email": "hi@ionicframework.com"
+    },
+    {
+      "name": "tlancina",
+      "email": "tim@ionic.io"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-1.0.8.tgz"
+}
