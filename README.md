@@ -3,7 +3,7 @@
 
 This Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
 
-![Alt text](/iphone.png)
+![iphone chat app](/iphone.png)
 
 ## 1. Bluemix NodeJS Server
 
@@ -107,11 +107,13 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 Now test the chat service between the Browser and the iPhone Simulator
 
 
-## 4. Extra Credit
+## 4. Extra Credit (Access Camera)
 
 If you finish the Lab in less than 15 minutes you can go ahead and continue
 
 Enable the App to send photos using the camera or photo library
+
+![iphone chat app with photo options](/iphone-extra.png)
 
 ### 4.1 Open XCode project
 
