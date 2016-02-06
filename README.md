@@ -14,9 +14,9 @@ Login into https://blueminx.net and verify that you have at least 128MB free for
 
 ### 1.1 Deploy the NodeJS Server for the Chat Service
 
-Click this button [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&branch=nodejs)
-
-Or Visit [http://ibm.biz/lab6678](http://ibm.biz/lab6678)
+Click this button <a href="https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&amp;branch=nodejs" target="_blank">
+<img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix" style="max-width:100%;">
+</a>or visit <a href="http://ibm.biz/lab6678" target="_blank">http://ibm.biz/lab6678</a>
 
 This will deploy the **nodejs** branch
 
