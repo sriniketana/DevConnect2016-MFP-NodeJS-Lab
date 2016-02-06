@@ -3,7 +3,7 @@
 
 This Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
 
-![iphone chat app](/iphone.png)
+![iphone chat app](/README-img/iphone.png)
 
 ## 1. Bluemix NodeJS Server
 
@@ -13,11 +13,13 @@ Login into https://blueminx.net and verify that you have at least 128MB free for
 
 Click this button [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&branch=nodejs)
 
-Or Visit [https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&branch=nodejs](https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&branch=nodejs)
+Or Visit [http://ibm.biz/lab6678](http://ibm.biz/lab6678)
+
+This will deploy the **nodejs** branch
 
 Select a unique hostname for your new App
 
-![bluexmix app deployed](/bluemix-deploy.png)
+![bluexmix app deployed](/README-img/bluemix-deploy.png)
 
 ### 1.2 Save the url for your new Chat Service (i.e. https://mychat.bluemix.net)
 
@@ -60,7 +62,7 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 
     $ mfp console
 
-![adapter deployed on console](/console-adapter.png)
+![adapter deployed on console](/README-img/console-adapter.png)
     
 2.3.4 Test the adapter and verify that returns the correct chat url
 
@@ -92,7 +94,7 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 
 3.2.2 Open Console and verify that App is registered
 
-![app deployed on console](/console-app.png)
+![app deployed on console](/README-img/console-app.png)
 
 ### 3.3 Running the App
 3.3.1 Preview the App on the Browser
@@ -121,7 +123,7 @@ If you finish the Lab in less than 15 minutes you can go ahead and continue
 
 Enable the App to send photos using the camera or photo library
 
-![iphone chat app with photo options](/iphone-extra.png)
+![iphone chat app with photo options](/README-img/iphone-extra.png)
 
 ### 4.1 Open XCode project
 
@@ -133,7 +135,7 @@ You can also open from Terminal
 
 Click Play Button in XCode to run Simulator
 
-![app open in xcode](/xcode.png)
+![app open in xcode](/README-img/xcode.png)
 
 ### 4.2 Add the Cordova Camera Plugin
 
