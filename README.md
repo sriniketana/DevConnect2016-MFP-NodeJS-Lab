@@ -147,6 +147,8 @@ Adapters
 
     $ mfp cordova emulate
     
+When prompted select an iPhone Simulator from the list
+    
 3.3.3 To run a specific Simulator you can pass `--target` argument
 
     $ mfp cordova emulate --target iPhone-6s-Plus  
@@ -154,12 +156,20 @@ Adapters
 
 ### 3.4 Test the App
 
-3.4.1 Visit the Chat Service on the Browser (i.e. https://mychat.bluemix.net)
+3.4.1 Visit the Chat Service on Bluemix (i.e. https://mychat.bluemix.net)
 
 Now test the chat service between the Browser and the iPhone Simulator
 
+If the Keyboard doesn't show up in the Simulator, then press Command (⌘) + K
 
-## 4. Extra Credit (Access Camera)
+You can share the Bluemix URL to a friend located in any part of the world and have
+a conversation.
+
+This demo App is not configued with Login Authentication, this
+is something you can easily add using MobileFirst Platform check [MFP Developer Center](https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/)
+for more information on security related topics.
+
+## 4. Extra Credit (Camera access)
 
 If you finish the Lab in less than 15 minutes you can go ahead and continue
 
