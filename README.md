@@ -191,7 +191,7 @@ Click Play Button in XCode to run Simulator
 
 ### 4.2 Add the Cordova Camera Plugin
 
-Change directory to App
+Change directory to MFPApp if not already
 
     $ cd MFPApp
 
@@ -203,14 +203,13 @@ Use the MFP-CLI to add the camera plugin
 
 Edit `MFPApp/www/templates/chat.html`
 
-Add a camera icon to call Camera Plugin as the first child of the `<form>`
+Add a camera icon to call Camera Plugin as the first child of the `<form id="footer-input">`
 ```html
 <i class="icon ion-camera" ng-click="takePicture()" ng-show="isWebView"></i>
 ```  
-### 4.4 Deploy App Changes
+### 4.4 Prepare App Changes
 
-Use the MFP-CLI to deploy your changes
-
+Use the MFP-CLI to prepare your changes
 
     $ mfp cordova prepare
 
