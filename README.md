@@ -69,7 +69,7 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 
 2.3.1 Change directory to the adapter directory
 
-    $ cd MFPBackend/adapters/ChatService/
+    $ cd adapters/ChatService/
 
 2.3.2 Use the MFP-CLI to push only the adapter changes
 
