@@ -62,15 +62,15 @@ If you don't have the MFP-CLI installed you can download the MFP-CLI from the <a
 2.2.1 Edit `MFPBackend/adapters/ChatService/ChatService-impl.js`
 
 Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
-
-    var chatUrl = 'https://mychat.mybluemix.net';
-
+```javascript
+var chatUrl = 'https://mychat.mybluemix.net';
+```
 ### 2.3  Deploy Adapter changes
 
 2.3.1 Change directory to the adapter directory
 
     $ cd adapters/ChatService/
-
+    
 2.3.2 Use the MFP-CLI to push only the adapter changes
 
     $ mfp push
@@ -87,14 +87,14 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
     
 The command should return a response with the url of your nodejs app
 
+```javascript
     Calling GET '/MFPBackend/adapters/ChatService/getChatServiceInfo?params=[]'
-
     Response:
     {
       "isSuccessful": true,
       "chatUrl": "https://chatservice.mybluemix.net"
     }
-
+```
 ## 3. MFP App
 
 ### 3.1 Setup App
@@ -171,9 +171,9 @@ Use the MFP-CLI to add the camera plugin
 Edit `MFPApp/www/templates/chat.html`
 
 Add a camera icon to call Camera Plugin as the first child of the `<form>`
-
-    <i class="icon ion-camera" ng-click="takePicture()" ng-show="isWebView"></i>
-   
+```html
+<i class="icon ion-camera" ng-click="takePicture()" ng-show="isWebView"></i>
+```  
 ### 4.4 Deploy App Changes
 
 Use the MFP-CLI to deploy your changes
