@@ -85,7 +85,7 @@ var chatUrl = 'https://mychat.mybluemix.net';
 
     $ mfp adapter call ChatService/getChatServiceInfo
     
-The command should return a response with the url of your nodejs app
+The command will return a response with the url of your nodejs app
 
 ```javascript
     Calling GET '/MFPBackend/adapters/ChatService/getChatServiceInfo?params=[]'
@@ -111,7 +111,30 @@ The command should return a response with the url of your nodejs app
 
     $ mfp push
 
-3.2.2 Open Console and verify that App is registered
+3.2.2 Use the MFP-CLI to verify that the app is registered on the correct server
+
+    $ mfp server info local
+    
+The command will return a list of adapters and apps:
+
+```
+Connecting to server 'local'
+Profile name: local
+URL: http://localhost:10080
+MFP version: 7.1.0.00-20160125-0742
+Is default: true
+------------------------------------------------------
+Runtime: MFPBackend
+Bound apps
+	IC2016Chat, v1.0.0 - Hybrid (iphone)
+Adapters
+	ChatService
+------------------------------------------------------
+```
+
+3.2.3 You can also open the Console and verify that the IC2016Caht app is registered
+
+    $ mfp console
 
 ![app deployed on console](/README-img/console-app.png)
 
