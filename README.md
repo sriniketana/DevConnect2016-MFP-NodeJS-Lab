@@ -100,7 +100,7 @@ The command should return a response with the url of your nodejs app
 ### 3.1 Setup App
 3.1.1 Change directory to the app directory
 
-    $ cd MFPApp
+    $ cd ../../../MFPApp
 
 3.1.2 Use the MFP-CLI to add the Cordova Platform iOS
 
