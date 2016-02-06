@@ -20,11 +20,25 @@ Click this button <a href="https://bluemix.net/deploy?repository=https://github.
 
 This will deploy the **nodejs** branch
 
-Select a unique hostname for your new App
+Select a unique hostname for your new App, like:"**mychat**"
+
+Your app will be assigned a https unique URL like:**https://mychat.mybluemix.net**
 
 ![bluexmix app deployed](/README-img/bluemix-deploy.png)
 
-### 1.2 Save the url for your new Chat Service (i.e. https://mychat.bluemix.net)
+### 1.2 Save the url for your new Chat Service (i.e. https://mychat.mybluemix.net)
+
+Click ![View Your APP](/README-img/view-app.png) to see the chat app running on the browser and verify the URL like https://mychat.mybluemix.net 
+
+Leave the browser window open since we are going to need the URL and use the website for testing our mobile App.
+
+### 1.3 MFP-CLI Installation
+Verify that your Lab workstation has the MFP-CLI installed by running  the following commands in a Terminal window
+
+    $ mfp help
+    $ mfp -v
+
+If you don't have the MFP-CLI installed you can download the MFP-CLI from the <a href="https://bit.ly/downloadmfp" target="_blank">MFP Developer Center</a>
 
 ## 2. MFP Server
 
