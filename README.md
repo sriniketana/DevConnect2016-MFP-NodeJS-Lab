@@ -1,6 +1,9 @@
 # IBM InterConnect 2016 @Dev Hello World Labs
 # 6678 - Mobile App Development Using the IBM MobileFirst Platform Foundation Command Line Interface (MFP-CLI)
 
+## Download
+Click **Download ZIP** above or click [here](https://github.com/csantanapr/IC2016-MFP-Hello-Lab/archive/master.zip)
+
 This Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
 
 ![iphone chat app](/README-img/iphone.png)
