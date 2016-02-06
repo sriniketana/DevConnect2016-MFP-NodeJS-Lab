@@ -84,6 +84,8 @@ Set the variable chatUrl to the url of your new Chat Service deployed in Step 1
 2.3.4 Test the adapter and verify that returns the correct chat url
 
     $ mfp adapter call ChatService/getChatServiceInfo
+    
+The command should return a response with the url of your nodejs app
 
     Calling GET '/MFPBackend/adapters/ChatService/getChatServiceInfo?params=[]'
 
