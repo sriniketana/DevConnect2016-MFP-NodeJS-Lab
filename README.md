@@ -174,8 +174,10 @@ for more information on security related topics.
 ## 4. Extra Credit (Camera access)
 
 - If you finish the Lab in less than 15 minutes you can go ahead and continue
+
 - Enable the App to send photos using the camera or photo library
 ![iphone chat app with photo options](/README-img/iphone-extra.png)
+
 
 ### 4.1 Open XCode project
 
@@ -258,6 +260,7 @@ and the *admin* credentials you enter in Step 5.1
     $ mfp server add bluemix -l admin -p admin -u http://169.x.x.x:9080
 ```
 > Notice to replace 169.x.x.x with the correct public IP address of your docker container   
+
 - Use the MFP-CLI to verify the list of server profiles
 ```
     $ mfp server info
