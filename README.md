@@ -1,30 +1,28 @@
-## IBM InterConnect 2016 @Dev Hello World Labs
 ## 6678 - Mobile App Development Using the IBM MobileFirst Platform Foundation Command Line Interface (MFP-CLI)
 
 ## Download
-- Click **Download ZIP** above or click [here](https://github.com/csantanapr/IC2016-MFP-Hello-Lab/archive/master.zip)
-
+- Click **Download ZIP** above or click [ibm.biz/lab6678zip](https://github.com/csantanapr/IC2016-MFP-Hello-Lab/archive/master.zip)
 ## Your Goal !
-- ### During this Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
-![iphone chat app](/README-img/iphone.png)
+- During this Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
+![iphone chat app](./README-img/iphone.png)
 
 ## 1. Bluemix NodeJS Server
 
 
 ### 1.1 Deploy the NodeJS Server for the Chat Service
-- Login into https://blueminx.net and verify that you have at least 128MB free for Cloud Foundry Apps
+- Login into [bluemix.net](https://bluemix.net) and verify that you have at least 128MB free for Cloud Foundry Apps
 - Click this button <a href="https://bluemix.net/deploy?repository=https://github.com/csantanapr/IC2016-MFP-Hello-Lab&amp;branch=nodejs" target="_blank">
 <img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix" style="max-width:100%;">
-</a>or visit <a href="http://ibm.biz/lab6678" target="_blank">http://ibm.biz/lab6678</a>
+</a>or visit <a href="http://ibm.biz/lab6678" target="_blank">ibm.biz/lab6678</a>
 
 - This will deploy the **nodejs** branch
 - Select a unique hostname for your new App, like:"**mychat**"
 - Your app will be assigned a https unique URL like:**https://mychat.mybluemix.net**
-![bluexmix app deployed](/README-img/bluemix-deploy.png)
+![bluexmix app deployed](./README-img/bluemix-deploy.png)
 
 ### 1.2 Save the url for your new Chat Service
 
-- Click ![View Your APP](/README-img/view-app.png) to see the chat app running on the browser and verify the URL like https://mychat.mybluemix.net 
+- Click ![View Your APP](./README-img/view-app.png) to see the chat app running on the browser and verify the URL like https://mychat.mybluemix.net 
 - Leave the browser window open since we are going to need the URL and use the website for testing our mobile App.
 
 ### 1.3 MFP-CLI Installation
@@ -78,7 +76,7 @@ var chatUrl = 'https://mychat.mybluemix.net';
 ```
     $ mfp console
 ```
-![adapter deployed on console](/README-img/console-adapter.png)
+![adapter deployed on console](./README-img/console-adapter.png)
     
 - Test the adapter and verify that returns the correct chat url
 ```
@@ -136,7 +134,7 @@ var chatUrl = 'https://mychat.mybluemix.net';
 ```
     $ mfp console
 ```
-![app deployed on console](/README-img/console-app.png)
+![app deployed on console](./README-img/console-app.png)
 
 ### 3.3 Running the App
 - Preview the App on the Browser
@@ -175,7 +173,7 @@ for more information on security related topics.
 
 - If you finish the Lab in less than 15 minutes you can go ahead and continue
 - Enable the App to send photos using the camera or photo library 
-  ![iphone chat app with photo options](/README-img/iphone-extra.png)
+  ![iphone chat app with photo options](./README-img/iphone-extra.png)
 
 ### 4.1 Open XCode project
 
@@ -186,7 +184,7 @@ for more information on security related topics.
     $ open platforms/ios/*.xcodeproj
 ```
 - Click Play Button in XCode to run Simulator
-![app open in xcode](/README-img/xcode.png)
+![app open in xcode](./README-img/xcode.png)
 
 ### 4.2 Add the Cordova Camera Plugin
 
@@ -231,10 +229,10 @@ you will need to deploy the MFP Server on a public IP Address that your iPhone c
 - Login into Bluemix and make sure you have at least 1GB of memory and 1 Public IP Address for Containers.
 - Click Containers on your Dashboard 
   
-  ![Create Container](/README-img/create-container.png)
+  ![Create Container](./README-img/create-container.png)
 - Select the ibm-mobilefirst-starter docker image
 
-  ![Create Container Information](/README-img/create-container-info.png)
+  ![Create Container Information](./README-img/create-container-info.png)
 - Enter the following minimum information:
   1. Container name: *MFPServer*
   2. Size: *Medium 2GB*
@@ -242,11 +240,11 @@ you will need to deploy the MFP Server on a public IP Address that your iPhone c
 - Click *Create*
 - Wait for a public to be assined, and container to be running
 
-  ![MFP Container running](/README-img/container-running.png)
+  ![MFP Container running](./README-img/container-running.png)
 - Click the public IP address to open a new Browser window
 - Enter a password to register the user *admin* for example *admin* and click Register
   
-  ![Register MFP admin](/README-img/mfp-register.png)
+  ![Register MFP admin](./README-img/mfp-register.png)
 - Save and bookmark the base URL for the MFP Server (i.e. http://169.x.x.x:9080)
 - Click *Open Console* to open the MFP Server Console
 
@@ -254,7 +252,7 @@ you will need to deploy the MFP Server on a public IP Address that your iPhone c
 - In the MFP Server Console Click *Add new Adapter* button at the top right
 - Browse to the location of ChatService.adapter for example *Downloads/IC2016-MFP-Hello-Lab-master/MFPBackend/bin/ChatService.adapter*
   
-  ![MFP Adapter Deploy](/README-img/mfp-deploy-adapter.png)
+  ![MFP Adapter Deploy](./README-img/mfp-deploy-adapter.png)
 
 ### 5.3 Add Remote MFP Server Profile
 - Use the MFP-CLI to add a new server profile with the name *bluemix* located using the public IP address on bluemix,
@@ -297,4 +295,4 @@ This is different from the local runtime *MFPBackend* on the local MFP Server
 - In XCode change the target from Simulator to the iPhone device
 - Click the Play button
 
-  ![App running on iPhone](/README-img/app-running.png)
+  ![App running on iPhone](./README-img/app-running.png)
