@@ -174,10 +174,8 @@ for more information on security related topics.
 ## 4. Extra Credit (Camera access)
 
 - If you finish the Lab in less than 15 minutes you can go ahead and continue
-
-- Enable the App to send photos using the camera or photo library
-![iphone chat app with photo options](/README-img/iphone-extra.png)
-
+- Enable the App to send photos using the camera or photo library 
+  ![iphone chat app with photo options](/README-img/iphone-extra.png)
 
 ### 4.1 Open XCode project
 
@@ -232,26 +230,31 @@ you will need to deploy the MFP Server on a public IP Address that your iPhone c
 
 - Login into Bluemix and make sure you have at least 1GB of memory and 1 Public IP Address for Containers.
 - Click Containers on your Dashboard 
-##TODO add picure
+  
+  ![Create Container](/README-img/create-container.png)
 - Select the ibm-mobilefirst-starter docker image
-##TODO add picture
+
+  ![Create Container Information](/README-img/create-container-info.png)
 - Enter the following minimum information:
   1. Container name: *MFPServer*
   2. Size: *Medium 2GB*
   3. Public IP Address: *Request and Bind IP*
 - Click *Create*
-- Wait for a public to be assined, and container to be
-##TODO add picture
+- Wait for a public to be assined, and container to be running
+
+  ![MFP Container running](/README-img/container-running.png)
 - Click the public IP address to open a new Browser window
 - Enter a password to register the user *admin* for example *admin* and click Register
-##TODO add picture
+  
+  ![Register MFP admin](/README-img/mfp-register.png)
 - Save and bookmark the base URL for the MFP Server (i.e. http://169.x.x.x:9080)
-- Click *Open Console* to go MFP Server Console
+- Click *Open Console* to open the MFP Server Console
 
 ### 5.2 Upload Adapter
 - In the MFP Server Console Click *Add new Adapter* button at the top right
 - Browse to the location of ChatService.adapter for example *Downloads/IC2016-MFP-Hello-Lab-master/MFPBackend/bin/ChatService.adapter*
-##TODO Picture
+  
+  ![MFP Adapter Deploy](/README-img/mfp-deploy-adapter.png)
 
 ### 5.3 Add Remote MFP Server Profile
 - Use the MFP-CLI to add a new server profile with the name *bluemix* located using the public IP address on bluemix,
@@ -293,7 +296,5 @@ This is different from the local runtime *MFPBackend* on the local MFP Server
 ```
 - In XCode change the target from Simulator to the iPhone device
 - Click the Play button
-- You can also run the App on your iPhone using MFP-CLI
-```
-    $ mfp cordova run
-```
+
+  ![App running on iPhone](/README-img/app-running.png)
