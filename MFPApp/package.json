@@ -18,10 +18,10 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "cordova-plugin-mfp",
     "./custom-plugins/ionic-plugin-keyboard",
     "./custom-plugins/cordova-plugin-transport-security",
-    "./custom-plugins/cordova-plugin-cs-disable-bitcode"
+    "./custom-plugins/cordova-plugin-cs-disable-bitcode",
+    "cordova-plugin-mfp"
   ],
   "cordovaPlatforms": [
     "ios"
