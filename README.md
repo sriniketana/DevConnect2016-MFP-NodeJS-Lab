@@ -1,7 +1,8 @@
-## 6678 - Mobile App Development Using the IBM MobileFirst Platform Foundation Command Line Interface (MFP-CLI)
+## Lab 6678A - Mobile App Development Using the IBM MobileFirst Platform Foundation Command Line Interface (MFP-CLI)
 
 ## Download
 - Click **Download ZIP** above or click [ibm.biz/lab6678zip](https://github.com/csantanapr/IC2016-MFP-Hello-Lab/archive/master.zip)
+
 ## Your Goal !
 - During this Lab you will build a Mobile Chat App that leverages the MFP Server and NodeJS using IBM Bluemix.
 ![iphone chat app](./README-img/iphone.png)
@@ -165,7 +166,7 @@ var chatUrl = 'https://mychat.mybluemix.net';
 - You can share the Bluemix URL to a friend located in any part of the world and have
 a conversation.
 
-- This demo App is not configued with Login Authentication, this
+- This demo App is not configured with Login Authentication, this
 is something you can easily add using MobileFirst Platform check [MFP Developer Center](https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/)
 for more information on security related topics.
 
@@ -173,6 +174,7 @@ for more information on security related topics.
 
 - If you finish the Lab in less than 15 minutes you can go ahead and continue
 - Enable the App to send photos using the camera or photo library 
+  
   ![iphone chat app with photo options](./README-img/iphone-extra.png)
 
 ### 4.1 Open XCode project
@@ -238,7 +240,7 @@ you will need to deploy the MFP Server on a public IP Address that your iPhone c
   2. Size: *Medium 2GB*
   3. Public IP Address: *Request and Bind IP*
 - Click *Create*
-- Wait for a public to be assined, and container to be running
+- Wait for a public IP address to be assigned, and the container to be running
 
   ![MFP Container running](./README-img/container-running.png)
 - Click the public IP address to open a new Browser window
