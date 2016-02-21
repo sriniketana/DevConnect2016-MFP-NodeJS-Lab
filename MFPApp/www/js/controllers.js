@@ -2,7 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('ChatCtrl', function ($scope, $ionicModal, $localStorage, $sessionStorage, Camera, SocketIO) {
 	var ChatManager = SocketIO;
-	$scope.isWebView = ionic.Platform.isWebView();
+
+  $scope.isWebView = window.location.protocol === 'file:';
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
   $scope.posts = ChatManager.posts;
   
@@ -32,7 +33,7 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($window, $http, $scope, $ionicModal, $localStorage, $sessionStorage, randomAvatar, SocketIO, $ionicLoading, MFPClientPromise, MFPServices) {
 	var ChatManager = SocketIO;
   
-  $scope.isWebView = ionic.Platform.isWebView();
+  $scope.isWebView = window.location.protocol === 'file:';
   $scope.$storage = $scope.isWebView ? $localStorage : $sessionStorage;
 
   $scope.save = function () {
