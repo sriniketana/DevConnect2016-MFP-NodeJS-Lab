@@ -4,8 +4,9 @@
  * Install all plugins listed in package.json
  *
 **/
-var exec = require('child_process').exec;
 var path = require('path');
+var exec = require('shelljs').exec;
+
 
 var packageJSON = null;
 
@@ -17,19 +18,9 @@ try {
 }
 
 packageJSON.cordovaPlugins = packageJSON.cordovaPlugins || [];
-var i = 0;
-var command =""
+
 packageJSON.cordovaPlugins.forEach(function (plugin) {
-  if (command === ""){
-    command += 'mfp cordova plugin add ' + plugin;
-  } else {
-    command += ' && mfp cordova plugin add ' + plugin;
-  }
-}); 
-console.log(command);
-exec(command, function (error, stdout, stderr) {
-    console.log('stdout: ' + stdout);
-    if (error !== null) {
-      console.log('exec error: ' + error + stderr);
-    }
+  var command = 'mfp cordova plugin add ' + plugin;
+  console.log('Running command:'+command);
+  exec(command,{'silent':true});
 });
