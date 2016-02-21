@@ -23,7 +23,7 @@ packageJSON.cordovaPlugins.forEach(function (plugin) {
   if (command === ""){
     command += 'mfp cordova plugin add ' + plugin;
   } else {
-    command += ' & mfp cordova plugin add ' + plugin;
+    command += ' && mfp cordova plugin add ' + plugin;
   }
 }); 
 console.log(command);
