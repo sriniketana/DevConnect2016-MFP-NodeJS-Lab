@@ -18,6 +18,8 @@ angular.module('starter.services')
 	};
 
 	function getChatServiceInfo() {
+    //FIXME: Temporary fix for Running XCode inside a VM
+    WL.App.setServerUrl("http://localhost:10080/MFPBackend");
 		var adapterName = 'ChatService';
 		var adapterProcedure = 'getChatServiceInfo';
 		var adapterPath = '/adapters/' + adapterName + '/' + adapterProcedure;
