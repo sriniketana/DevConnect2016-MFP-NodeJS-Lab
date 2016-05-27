@@ -151,8 +151,9 @@ angular.module('starter.services').factory('randomAvatar', function ($window, $h
     var user = {};
     $http.get('https://randomuser.me/api/').then(
       function win(resp){
-        user.avatar = resp.data.results[0].user.picture.thumbnail;
-        user.username = resp.data.results[0].user.name.first;
+      	//Fix to retrieve picture and name as there is change in JSON
+        user.avatar = resp.data.results[0].picture.thumbnail;
+        user.username = resp.data.results[0].name.first;
         defer.resolve(user);
       }, 
       function fail(resp){
